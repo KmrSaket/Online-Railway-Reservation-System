@@ -16,27 +16,33 @@
 		<?php
 			if(isset($_GET['error'])){
 				if($_GET['error']=="emptyfields"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Please fill all the required fields</p>';
+				echo '<script>alert("Please fill all the required fields");</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/signup.php";</script>';
 				}
 				if($_GET['error']=="invalidmailanduid"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Please fil valid User Name and Email</p>';
+				echo '<script>alert("Please fil valid User Name and Email");</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/signup.php";</script>';
 				}
 				if($_GET['error']=="invalidmail"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Please fill valid Email</p>';
+				echo '<script>alert("Please fill valid Email");</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/signup.php";</script>';
 				}
 				if($_GET['error']=="invaliduid"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Please fill vaild User name</p>';
+				echo '<script>alert("Please fill vaild User name");</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/signup.php";</script>';
 				}
 				if($_GET['error']=="invalidphone"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Please fill valid 10 digit phone number</p>';
+				echo '<script>alert("Please fill valid 10 digit phone number");</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/signup.php";</script>';
 				}
 				if($_GET['error']=="usertaken"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> User Name already exist. Try another!</p>';
+				echo '<script>alert("User Name already exist. Try another!");</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/signup.php";</script>';
 				}
 			}
 			elseif(isset($_GET['signup'])){
 				if($_GET['signup']=="success"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#00FF00;"> Sign up successfull!</p>';
+				echo '<script>alert("Sign up successfull!");</script>';
 				}
 			}
 			

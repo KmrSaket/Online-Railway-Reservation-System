@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if(isset($_SESSION['userName'])){
+		session_unset();
+		session_destroy();
+		//header("Location: ../index.php?user=logged_out");
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -18,21 +27,26 @@
 	<?php
 			if(isset($_GET['error'])){
 				if($_GET['error']=="emptyfields"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Please fill all the fields</p>';
+				echo '<script>alert("Please fill all the fields");</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
 				}
 				if($_GET['error']=="invaliduid"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Please input valid User Name</p>';
+				echo '<script>alert("Please input valid User Name")</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
 				}
 				elseif($_GET['error']=="wroongpassword"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> Wrong Password!</p>';
+				echo ' <script>alert("Wrong Password!")</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
 				}
 				elseif($_GET['error']=="userdontexist"){
-				echo '<p style="text-decoration:underline; font-weight:bold; color:#FF0000;"> User does not Exist!</p>';
+				echo '<script>alert("User does not Exist!")</script>';
+				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
 				}
 			}
 			elseif(isset($_GET['user'])){
 				if($_GET['user']=="logged_out"){
-					echo '<p style="text-decoration:underline; font-weight:bold; color:#00FF00;"> Logged out Successfully!</p>';
+					echo '<script>alert("Logged out Successfully!")</script>';
+					echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
 				}
 				
 			}
@@ -40,7 +54,10 @@
 		?>
     <div class="container">
       <label style = "padding-right: 35px;" for="uname"><b>USERNAME</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" >
+	  <?php 
+		echo '<input type="text" placeholder="Enter Username" name="uname" value="">';
+	  ?>
+    
       <label style = "padding-right: 35px;" for="psw"><b>PASSWORD</b></label>
       <input type="password" placeholder="Enter Password" name="psw" >
 
