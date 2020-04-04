@@ -27,26 +27,26 @@
 	<?php
 			if(isset($_GET['error'])){
 				if($_GET['error']=="emptyfields"){
-				echo '<script>alert("Please fill all the fields");</script>';
-				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
+				echo '<script type="text/javascript" src="js/alertAndRedirect.js"></script>';
+				echo '<script>loginErrorHandler("Please fill all the fields");</script>';				
 				}
 				if($_GET['error']=="invaliduid"){
-				echo '<script>alert("Please input valid User Name")</script>';
-				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
+				echo '<script type="text/javascript" src="js/alertAndRedirect.js"></script>';
+				echo '<script>loginErrorHandler("Please input valid User Name");</script>';	
 				}
 				elseif($_GET['error']=="wroongpassword"){
-				echo ' <script>alert("Wrong Password!")</script>';
-				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
+				echo '<script type="text/javascript" src="js/alertAndRedirect.js"></script>';
+				echo '<script>loginErrorHandler("Wrong Password!");</script>';
 				}
 				elseif($_GET['error']=="userdontexist"){
-				echo '<script>alert("User does not Exist!")</script>';
-				echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
+				echo '<script type="text/javascript" src="js/alertAndRedirect.js"></script>';
+				echo '<script>loginErrorHandler("User does not Exist!");</script>';
 				}
 			}
 			elseif(isset($_GET['user'])){
 				if($_GET['user']=="logged_out"){
-					echo '<script>alert("Logged out Successfully!")</script>';
-					echo '<script>window.location.href="http://localhost/Online%20Railway%20Reservation%20System/";</script>';
+					echo '<script type="text/javascript" src="js/alertAndRedirect.js"></script>';
+					echo '<script>loginErrorHandler("Logged out Successfully!");</script>';
 				}
 				
 			}
