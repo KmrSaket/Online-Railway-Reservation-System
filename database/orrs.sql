@@ -1,9 +1,11 @@
+CREATE DATABASE IF NOT EXISTS orrs DEFAULT CHARACTER SET utf8;
+USE orrs;
 -- phpMyAdmin SQL Dump
 -- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 29, 2020 at 03:11 PM
+-- Generation Time: Apr 01, 2020 at 10:10 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
