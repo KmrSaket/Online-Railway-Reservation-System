@@ -1,11 +1,9 @@
-CREATE DATABASE IF NOT EXISTS orrs DEFAULT CHARACTER SET utf8;
-USE orrs;
 -- phpMyAdmin SQL Dump
 -- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 01, 2020 at 10:10 AM
+-- Generation Time: Apr 21, 2020 at 03:28 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -27,6 +25,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE IF NOT EXISTS `admin` (
+  `admin_id` int(11) NOT NULL AUTO_INCREMENT,
+  `admin_name` varchar(10) NOT NULL,
+  `password` longtext NOT NULL,
+  PRIMARY KEY (`admin_id`),
+  UNIQUE KEY `admin_name` (`admin_name`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `admin_name`, `password`) VALUES
+(1, 'admin', '123');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `passenger`
 --
 
@@ -42,7 +62,15 @@ CREATE TABLE IF NOT EXISTS `passenger` (
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_name` (`user_name`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `passenger`
+--
+
+INSERT INTO `passenger` (`user_id`, `user_name`, `fname`, `lname`, `email`, `password`, `phone`) VALUES
+(1, 'sk', 'Saket', 'Kumar', 'saket.kumar123@gmail.com', '$2y$10$u17cYy4fspeVzmcJ/xYofuTlCr4wVdhPiGaLIe6iuKspPfga0NuHC', '9999777766'),
+(2, 'JDoe', 'John', 'Doe', 'johndoe@gmail.com', '$2y$10$u17cYy4fspeVzmcJ/xYofuTlCr4wVdhPiGaLIe6iuKspPfga0NuHC', '9876543210');
 
 -- --------------------------------------------------------
 
