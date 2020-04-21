@@ -5,7 +5,8 @@ To Run this project on your desktop follow these steps:
 1. download wamp(64bit).
 2. download the git file as .zip
 3. extract "Online Railway Reservation System" folder into c/wamp64/www
-4. import "Online Railway Reservation System/database/orrs.sql" file into phpMyAdmin
+4. to access "Your Projects" through WAMP follow the video : https://www.youtube.com/watch?v=JKasEJLyAp4&feature=youtu.be
+5. import "Online Railway Reservation System/database/orrs.sql" file into phpMyAdmin
 
 Note: you can access your phpMyAdmin by typing "http://localhost/phpmyadmin/" on your browser.
 
