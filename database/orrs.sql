@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 21, 2020 at 03:28 AM
+-- Generation Time: May 03, 2020 at 06:10 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -27,10 +27,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `admin`
 --
-
-CREATE DATABASE orrs;
-USE orrs;
-
 
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -66,15 +62,15 @@ CREATE TABLE IF NOT EXISTS `passenger` (
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_name` (`user_name`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `passenger`
 --
 
 INSERT INTO `passenger` (`user_id`, `user_name`, `fname`, `lname`, `email`, `password`, `phone`) VALUES
-(1, 'sk', 'Saket', 'Kumar', 'saket.kumar123@gmail.com', '$2y$10$u17cYy4fspeVzmcJ/xYofuTlCr4wVdhPiGaLIe6iuKspPfga0NuHC', '9999777766'),
-(2, 'JDoe', 'John', 'Doe', 'johndoe@gmail.com', '$2y$10$u17cYy4fspeVzmcJ/xYofuTlCr4wVdhPiGaLIe6iuKspPfga0NuHC', '9876543210');
+(2, 'JDoe', 'John', 'Doe', 'johndoe@gmail.com', '$2y$10$o4TL7HQEeIf./y0YcFNrH.O6btCcwJwGO8F//yWz9bZkqa2fYGmDy', '1212121212'),
+(3, 'qw', 'qwerty', 'Kumar', 'asdfghjk@gmail.com', '$2y$10$EwNFZBYa0gzFUz5NkUYh0eR8jZUj.f.ozbfvOR64D1tx.bNZ7Zdvi', '1111111111');
 
 -- --------------------------------------------------------
 
@@ -97,6 +93,29 @@ CREATE TABLE IF NOT EXISTS `ticket` (
   UNIQUE KEY `ticket_no` (`transaction_id`),
   UNIQUE KEY `transaction_id` (`transaction_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `train`
+--
+
+DROP TABLE IF EXISTS `train`;
+CREATE TABLE IF NOT EXISTS `train` (
+  `train_no` int(11) NOT NULL,
+  `train_name` varchar(50) NOT NULL,
+  `source_st` varchar(50) NOT NULL,
+  `destination_st` varchar(50) NOT NULL,
+  `running_days` int(7) NOT NULL,
+  PRIMARY KEY (`train_no`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `train`
+--
+
+INSERT INTO `train` (`train_no`, `train_name`, `source_st`, `destination_st`, `running_days`) VALUES
+(1234, 'S F Exp', 'A', 'C', 1101010);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
