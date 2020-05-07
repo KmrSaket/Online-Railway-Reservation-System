@@ -28,6 +28,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
+CREATE DATABASE orrs;
+USE orrs;
+
+
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `admin_id` int(11) NOT NULL AUTO_INCREMENT,

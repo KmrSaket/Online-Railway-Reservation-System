@@ -1,0 +1,66 @@
+#train-search {
+text-align:center;
+margin: 7% 15%;
+}
+.reservation-form{
+margin: 5% 20% 5% 5%;
+background-color: #fff;
+padding: 3% 2%;
+border: solid 1px blue;
+}
+body{
+background-color: #beebe9;
+font-family: 'Josefin Sans', sans-serif;
+padding-top: 2rem;
+}
+nav{
+background-color: #beebe9;
+position: fixed;
+z-index=1;
+}
+.navbar-brand{
+font-family: 'Ubuntu', sans-serif;
+font-weight: bold;
+font-size: 2.5rem;
+line-height: 1.5;
+margin-left: 4rem;
+}
+.nav-item{
+color: #000;
+margin: 1rem;
+}
+.btn-train{
+margin-top: 1rem;
+}
+#check-pnr{
+text-align: center;
+background-color: #fff;
+padding: 7% 25%;
+}
+#footer{
+text-align: center;
+padding: 1% 15%;
+}
+.f{
+margin:20px 15px;
+color: #000;
+}
+.title-img{
+width: 90%;
+border-radius: 100%;
+}
+#about-us{
+padding: 4% 43%;
+}
+h2{
+text-align: center;
+}
+#contact-us{
+padding: 7% 15%;
+background-color: #fff;
+}
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
