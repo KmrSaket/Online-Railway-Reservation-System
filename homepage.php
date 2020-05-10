@@ -54,13 +54,13 @@
           <a class="nav-link" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TRANSACTIONS</a>
+          <a class="nav-link" id="transactions_link" onclick="functionName()">TRANSACTIONS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#check-pnr">CHECK PNR</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">T&C</a>
+          <a class="nav-link" href="Tnc.php">T&C</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact-us">CONTACT US</a>
@@ -132,10 +132,50 @@
 
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<!-- modal for users transactions (modal start) -->
+
+
+
+<div id="transactions" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >
+					<div class="modal-content  text-center" style="padding:5vh 2vh">
+						<div class="modal-header">
+											<h5 class="modal-title">Transactions</h5>
+		      	</div>
+						<br>
+						<div class="container">
+							user transactions goes here! (tab wise!)
+							<br>
+							1. Upcoming
+							<br>
+							2. past
+							<br>
+							3. cancelled
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+<!-- modal for users transactions (modal end) -->
+
+
+
+
+
+
+
+
+
 </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/homepage.js"></script>
 </html>
