@@ -1,8 +1,19 @@
 #transactions_link{
   cursor: pointer;
 }
-
-
+#WelcomeTag{
+  text-align: right;
+  background-color: #fff;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 5vh;
+}
+#pnr, textarea{
+  margin-bottom:  3vh
+}
+/* input, textarea{
+  margin-bottom:  1vh;
+} */
 
 
 

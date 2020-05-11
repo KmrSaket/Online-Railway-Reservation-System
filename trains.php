@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- external css -->
 	<link rel="stylesheet" href="style/homepage.css">
+  <link rel="stylesheet" href="style/train.css">
 
   <script src="https://kit.fontawesome.com/4f5b6480b7.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu&display=swap" rel="stylesheet">
@@ -45,15 +46,15 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">HOME</a>
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.php">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="transactions_link">TRANSACTIONS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#check-pnr">CHECK PNR</a>
-        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">CHECK PNR</a>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="Tnc.php">T&C</a>
         </li>
@@ -82,8 +83,62 @@
 		</h3>
 	</section>
 
+<br>
+<h2>Train Query goes here!</h2>
+<br>
 
-  <section id="train-search">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+        <div class="card">
+          <h5 class="card-header card-title">Train Name</h5>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> Availability </li>
+              <li class="list-group-item"> Duration:</li>
+              <li class="list-group-item"> Time: </li>
+              <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-8">
+        <div class="card">
+          <h5 class="card-header card-title">Train Name</h5>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> Availability </li>
+              <li class="list-group-item"> Duration:</li>
+              <li class="list-group-item"> Time: </li>
+              <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-8">
+        <div class="card">
+          <h5 class="card-header card-title">Train Name</h5>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> Availability </li>
+              <li class="list-group-item"> Duration:</li>
+              <li class="list-group-item"> Time: </li>
+              <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+  <!-- <section id="train-search">
     <div class="row">
       <div class="col-lg-6">
         <form class="reservation-form" action="trains.php">
@@ -102,16 +157,16 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
 
-  <section id = "check-pnr">
+  <!-- <section id = "check-pnr">
     <form>
       <h1>Checking your PNR was never that easy!</h1>
       <input class="form-control " type="search" placeholder="Enter your PNR number" id="pnr">
       <button class="btn btn-dark btn-md" type="submit">Check PNR</button>
     </form>
   </section>
-<hr>
+<hr> -->
 <section id="contact-us">
 <form class="contact-form">
   <h2>CONTACT US</h2>
