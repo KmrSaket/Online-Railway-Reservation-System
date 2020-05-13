@@ -1,0 +1,90 @@
+<?php
+
+		include_once ('../dbh_inc.php') ;		//includes database connection file
+
+
+    //assigning values to php variables	using $_POST
+		$source 	= $_POST['source'];
+    $destination 	= $_POST['destination'];
+    // $runningDays 	= $_POST['runningDays'];
+
+
+
+
+
+		$sql = "SELECT * FROM train WHERE source_st = ? AND destination_st = ?";
+		$stmt=mysqli_stmt_init($conn);
+
+			//check if sql connection is created
+			if(!mysqli_stmt_prepare($stmt,$sql)){
+				?>
+        <h5> An Error occured while connecting to database!</h5>
+				<?php
+				exit();
+			}
+			else{
+        mysqli_stmt_bind_param($stmt,"ss",$source,$destination);
+        mysqli_stmt_execute($stmt);
+				$query=mysqli_stmt_get_result($stmt);
+
+        if(mysqli_num_rows($query)>0){
+
+  				while ($result=mysqli_fetch_array($query)) {
+            ?>
+
+            <div class="row justify-content-center">
+              <div class="col-8">
+                  <div class="card">
+                    <span>
+                      <h5 class="card-header card-title"> <?php echo $result['train_no']." - ".$result['train_name']; ?></h5>
+                      <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"> Availability:  <?php echo "NA"; ?> </li>
+                          <li class="list-group-item"> Duration:  <?php echo "NA"; ?> </li>
+                          <li class="list-group-item"> Time:   <?php echo "NA"; ?> </li>
+                          <li class="list-group-item">  <button class="btn btn-dark" type="button">Book Ticket</button></li>
+                        </ul>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+            </div>
+
+						<?php
+          }
+        }
+				else {
+					?>
+
+							<h5> No Trains b/w the stations in Database!</h5>
+
+					<?php
+				}
+		}
+
+?>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row justify-content-center">
+  <div class="col-8">
+      <div class="card">
+        <h5 class="card-header card-title">Train Name</h5>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> Availability </li>
+            <li class="list-group-item"> Duration:</li>
+            <li class="list-group-item"> Time: </li>
+            <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div> -->

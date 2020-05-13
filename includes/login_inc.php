@@ -57,6 +57,7 @@
 						session_start();							//session started on successfull login
 						$_SESSION['userName']=$row['user_name'];	//session variable for user_name created
 						$_SESSION['userEmail']=$row['email'];		//session variable for email created
+						$_SESSION['firstName']=$row['fname'];	//session variable for user_name created
 						header("Location: ../homepage.php");
 						exit();
 					}
