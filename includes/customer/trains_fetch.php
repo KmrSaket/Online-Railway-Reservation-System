@@ -6,13 +6,13 @@
     //assigning values to php variables	using $_POST
 		$source 	= $_POST['source'];
     $destination 	= $_POST['destination'];
-    // $runningDays 	= $_POST['runningDays'];
+    $dayIndex 	= $_POST['dayIndex']+2;
 
 
 
 
 
-		$sql = "SELECT * FROM train WHERE source_st = ? AND destination_st = ?";
+		$sql = "SELECT * FROM train WHERE source_st = ? AND destination_st = ? AND substring(running_days,?,1)=1";
 		$stmt=mysqli_stmt_init($conn);
 
 			//check if sql connection is created
@@ -23,7 +23,7 @@
 				exit();
 			}
 			else{
-        mysqli_stmt_bind_param($stmt,"ss",$source,$destination);
+        mysqli_stmt_bind_param($stmt,"ssi",$source,$destination,$dayIndex	);
         mysqli_stmt_execute($stmt);
 				$query=mysqli_stmt_get_result($stmt);
 
@@ -39,10 +39,11 @@
                       <h5 class="card-header card-title"> <?php echo $result['train_no']." - ".$result['train_name']; ?></h5>
                       <div class="card-body">
                         <ul class="list-group list-group-flush">
+													<li class="list-group-item"> Cost:  <?php echo "NA"; ?> </li>
                           <li class="list-group-item"> Availability:  <?php echo "NA"; ?> </li>
                           <li class="list-group-item"> Duration:  <?php echo "NA"; ?> </li>
                           <li class="list-group-item"> Time:   <?php echo "NA"; ?> </li>
-                          <li class="list-group-item">  <button class="btn btn-dark" type="button">Book Ticket</button></li>
+                          <li class="list-group-item">  <button class="btn btn-dark" name="book" type="button">Book Ticket</button></li>
                         </ul>
                       </div>
                     </span>

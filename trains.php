@@ -4,10 +4,10 @@
 		header("Location: index.php?loginrequired");
 		exit();
 	}
-	// elseif (empty($_GET['s']) && empty($_GET['d']) && empty($_GET['date'])) {
-	// 	header("Location: homepage.php?search=notfilled");
-	// 	exit();
-	// }
+	elseif (empty($_GET['s']) && empty($_GET['d']) && empty($_GET['date'])) {
+		header("Location: homepage.php?search=notfilled");
+		exit();
+	}
 ?>
 
 
@@ -79,9 +79,9 @@
 	<section id="WelcomeTag">
 		<h3 style="padding:0; margin:0">
 		<?php
-		if(isset($_SESSION['userName'])){
-			$username=$_SESSION['userName'];
-			echo "Welcome "."$username";
+		if(isset($_SESSION['firstName'])){
+			$firstname=$_SESSION['firstName'];
+			echo "Welcome "."$firstname";
 		}
 		?>
 		</h3>

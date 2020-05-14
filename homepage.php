@@ -73,12 +73,12 @@
 
 	<section id="WelcomeTag">
 		<h3 style="padding:0; margin:0">
-		<?php
-		if(isset($_SESSION['userName'])){
-			$username=$_SESSION['userName'];
-			echo "Welcome "."$username";
-		}
-		?>
+			<?php
+			if(isset($_SESSION['firstName'])){
+				$firstname=$_SESSION['firstName'];
+				echo "Welcome "."$firstname";
+			}
+			?>
 		</h3>
 	</section>
 
@@ -93,7 +93,8 @@
           <input class="form-control mr-sm-2" type="text" placeholder="TO" name="d">
           <br>
           <label for="doj">Select Date :  </label>
-          <input type="date" name="date" placeholder="Select Date">
+          <input type="date" name="date">
+
           <button class = "btn-train btn btn-primary btn-lg btn-block" type="submit" id="search" >Search</button>
         </form>
       </div>
@@ -170,6 +171,43 @@
 
 
 <!-- modal for users transactions (modal end) -->
+
+
+
+
+
+
+
+
+
+<!-- modal after ticket is booked (modal start) -->
+
+
+
+<div id="payment" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >
+					<div class="modal-content  text-center" style="padding:5vh 2vh">
+						<div class="modal-header">
+											<h5 class="modal-title">Congratulations!</h5>
+		      	</div>
+						<br>
+						<div class="container">
+							booked ticket! ...etc...
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+<!-- modal for users transactions (modal end) -->
+
+
+
+
+
+
 
 
 
