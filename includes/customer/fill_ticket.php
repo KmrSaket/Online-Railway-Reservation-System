@@ -9,15 +9,15 @@
 
  ?>
 <form class="form" action="payment_gateway.php" method="post">
-  <input type="text" value="<?php echo $tno ; ?>" id="train_no" disabled>
+  <input type="text" value="<?php echo $tno ; ?>" name="train_no" readonly>
   <br>
-  <input type="text" value="<?php echo $tname ; ?>" id="train_name" disabled>
+  <input type="text" value="<?php echo $tname ; ?>" name="train_name" readonly >
   <br>
-  <input type="text" value="<?php echo $source ; ?>" id="source" disabled>
+  <input type="text" value="<?php echo $source ; ?>" name="source" readonly>
   <br>
-  <input type="text" value="<?php echo $destination ; ?>" id="destination" disabled>
+  <input type="text" value="<?php echo $destination ; ?>" name="destination" readonly>
   <br>
-  <input type="text" value="<?php echo $date ; ?>" id="date" disabled>
+  <input type="text" value="<?php echo $date ; ?>" name="date" readonly>
   <br>
   <label for="details">passenger's details goes here!</label>
   <input type="text" name="details" placeholder="details (leave empty)">

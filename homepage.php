@@ -112,16 +112,22 @@
       <button class="btn btn-dark btn-md" type="submit">Check PNR</button>
     </form>
   </section>
+
 <hr>
+
+
 <section id="contact-us">
-<form class="contact-form">
+<form class="contact-form" action="mailto:orrs@fyp.com" method="post" enctype="text/plain">
   <h2>CONTACT US</h2>
-  <input class="form-control" type="name" placeholder="YOUR NAME" id="contactus_name">
-  <input class="form-control" type="email" placeholder="YOUR EMAIL ID" id="contactus_email">
-  <textarea class="form-control" rows="8" cols="80" placeholder="Your Query Please" id="contactus_query"></textarea>
-  <button class="btn btn-lg btn-dark" type="submit" name="button-for-contact">SUBMIT</button>
+  <input class="form-control" type="name" name="name" placeholder="YOUR NAME">
+  <input class="form-control" type="email" name="email" placeholder="YOUR EMAIL ID">
+  <textarea class="form-control" name="query" rows="8" cols="80" placeholder="Your Query Please"></textarea>
+  <button class="btn btn-lg btn-dark" type="submit">SUBMIT</button>
 </form>
 </section>
+
+
+
   <section id = "about-us">
     <h2>ABOUT US</h2>
     <ul>
@@ -154,14 +160,22 @@
 											<h5 class="modal-title">Transactions</h5>
 		      	</div>
 						<br>
-						<div class="container">
-							user transactions goes here! (tab wise!)
-							<br>
-							1. Upcoming
-							<br>
-							2. past
-							<br>
-							3. cancelled
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="upcomingTicket" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="true">Upcoming</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cancelled</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">All</a>
+						  </li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<br><br>
+						  <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcomingTicket">Upcoming Tickets</div>
+						  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Nothing implemented!</div>
+						  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Nothing implemented!</div>
 						</div>
 					</div>
 				</div>
@@ -218,15 +232,19 @@
 
 
 </body>
-<!--
+<!-- <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/homepage.js"></script> -->
+<script type="text/javascript" src="js/homepage.js"></script>
+<script type="text/javascript" src="js/trains.js"></script> -->
 <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/homepage.js"></script>
+<script type="text/javascript" src="js/trains.js"></script>
+<script type="text/javascript" src="js/fetchTicket.js"></script>
 </html>

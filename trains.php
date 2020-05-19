@@ -171,14 +171,15 @@
   </section>
 <hr> -->
 <section id="contact-us">
-<form class="contact-form">
+<form class="contact-form" action="mailto:orrs@fyp.com" method="post" enctype="text/plain">
   <h2>CONTACT US</h2>
-  <input class="form-control" type="name" placeholder="YOUR NAME" id="contactus_name">
-  <input class="form-control" type="email" placeholder="YOUR EMAIL ID" id="contactus_email">
-  <textarea class="form-control" rows="8" cols="80" placeholder="Your Query Please" id="contactus_query"></textarea>
-  <button class="btn btn-lg btn-dark" type="submit" name="button-for-contact">SUBMIT</button>
+  <input class="form-control" type="name" name="name" placeholder="YOUR NAME">
+  <input class="form-control" type="email" name="email" placeholder="YOUR EMAIL ID">
+  <textarea class="form-control" name="query" rows="8" cols="80" placeholder="Your Query Please"></textarea>
+  <button class="btn btn-lg btn-dark" type="submit">SUBMIT</button>
 </form>
 </section>
+
   <section id = "about-us">
     <h2>ABOUT US</h2>
     <ul>

@@ -22,8 +22,7 @@ $('document').ready(function() {
                  var currentCard=$(this).closest("span");
                  tnum=currentCard.find("h5").text().trim().substring(0,5);
                  tname=currentCard.find("h5").text().trim().substring(8,);
-                 console.log(tnum);
-                 console.log(tname);
+
                  // sending data to ticket form and ask user to fill details
 
                        $.post( 'includes/customer/fill_ticket.php' ,
@@ -32,7 +31,6 @@ $('document').ready(function() {
                                  // alert(this.url);
                                  $('#searchQuery').html("Please fill the form!");
                                  $('#response').html(responsedata_fetch);
-
                                 // $('button[name="book"]').click(function() {
                                 //   var currentCard=$(this).closest("span");
                                 //   var tnum=currentCard.find("h5").text().trim().substring(0,5);
