@@ -4,3 +4,35 @@
 .card{
   margin: 1% 2% 10% 1%;
 }
+#trainDetail input{
+  background-color:#beebe9;
+  border:none;
+}
+h1 {
+    text-align: center;
+  }
+  h4{
+    padding: 1rem 0;
+    color: blue;
+  }
+  table{
+    border: 1px solid grey;
+    margin-bottom: 2%;
+  }
+  td{
+    border: 1px solid grey;
+  }
+  th {
+    background-color: #D3D3D3;
+    border: 1px solid grey;
+  }
+
+  .name{
+    width:80%;
+  }
+  .age{
+    width:20%;
+  }
+  .btn-style{
+    margin: 3% 1% 0 0;
+  }

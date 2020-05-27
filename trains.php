@@ -205,6 +205,8 @@
 
 
 
+
+
 <div id="transactions" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >
 					<div class="modal-content  text-center" style="padding:5vh 2vh">
@@ -212,19 +214,26 @@
 											<h5 class="modal-title">Transactions</h5>
 		      	</div>
 						<br>
-						<div class="container">
-							user transactions goes here! (tab wise!)
-							<br>
-							1. Upcoming
-							<br>
-							2. past
-							<br>
-							3. cancelled
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="upcomingTicket" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="true">Upcoming</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="pastTicket" data-toggle="tab" href="#past" role="tab" aria-controls="profile" aria-selected="false">Past</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="allTickets" data-toggle="tab" href="#All" role="tab" aria-controls="contact" aria-selected="false">All</a>
+						  </li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<br><br>
+						  <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcomingTicket">Upcoming Tickets</div>
+						  <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="profile-tab">Past Tickets!</div>
+						  <div class="tab-pane fade" id="All" role="tabpanel" aria-labelledby="contact-tab">All Ticket!</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 
 
 

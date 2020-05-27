@@ -165,17 +165,17 @@
 						    <a class="nav-link active" id="upcomingTicket" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="true">Upcoming</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cancelled</a>
+						    <a class="nav-link" id="pastTicket" data-toggle="tab" href="#past" role="tab" aria-controls="profile" aria-selected="false">Past</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">All</a>
+						    <a class="nav-link" id="allTickets" data-toggle="tab" href="#All" role="tab" aria-controls="contact" aria-selected="false">All</a>
 						  </li>
 						</ul>
 						<div class="tab-content" id="myTabContent">
 							<br><br>
 						  <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcomingTicket">Upcoming Tickets</div>
-						  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Nothing implemented!</div>
-						  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Nothing implemented!</div>
+						  <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="profile-tab">Past Tickets!</div>
+						  <div class="tab-pane fade" id="All" role="tabpanel" aria-labelledby="contact-tab">All Ticket!</div>
 						</div>
 					</div>
 				</div>

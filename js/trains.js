@@ -31,6 +31,7 @@ $('document').ready(function() {
                                  // alert(this.url);
                                  $('#searchQuery').html("Please fill the form!");
                                  $('#response').html(responsedata_fetch);
+
                                 // $('button[name="book"]').click(function() {
                                 //   var currentCard=$(this).closest("span");
                                 //   var tnum=currentCard.find("h5").text().trim().substring(0,5);
@@ -45,6 +46,13 @@ $('document').ready(function() {
               }
         );
 
+
+          // fetch tickets
+          $.post( './includes/customer/fetch_upcoming_tickets.php',
+          function(responsedata_fetch) {
+                $('#upcoming').html(responsedata_fetch);
+              }
+            );
 
 
 
