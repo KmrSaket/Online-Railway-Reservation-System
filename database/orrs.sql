@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 19, 2020 at 07:14 PM
+-- Generation Time: Jul 04, 2020 at 05:11 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -84,18 +84,15 @@ CREATE TABLE IF NOT EXISTS `ticket` (
   `source_st` varchar(50) NOT NULL,
   `destination_st` varchar(50) NOT NULL,
   `dateOfBooking` date NOT NULL,
+  `p1_name` varchar(50) NOT NULL,
+  `p1_age` int(3) NOT NULL,
+  `p1_gender` varchar(6) NOT NULL,
+  `p2_name` varchar(50) NOT NULL,
+  `p2_age` int(3) NOT NULL,
+  `p2_gender` varchar(6) NOT NULL,
   PRIMARY KEY (`pnr`),
-  KEY `ticket_ibfk_1` (`user_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `ticket`
---
-
-INSERT INTO `ticket` (`user_name`, `pnr`, `source_st`, `destination_st`, `dateOfBooking`) VALUES
-('qw', 7, 'Dibrugarh', 'New Delhi', '2020-05-29'),
-('qw', 8, 'Dibrugarh', 'New Delhi', '2020-05-08'),
-('qw', 9, 'Hazrat Nizamuddin', 'Mumbai Central', '2020-05-26');
+  KEY `user_name` (`user_name`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -148,7 +145,7 @@ INSERT INTO `train` (`train_no`, `train_name`, `source_st`, `destination_st`, `r
 -- Constraints for table `ticket`
 --
 ALTER TABLE `ticket`
-  ADD CONSTRAINT `ticket_ibfk_1` FOREIGN KEY (`user_name`) REFERENCES `passenger` (`user_name`) ON DELETE SET NULL ON UPDATE CASCADE;
+  ADD CONSTRAINT `user_name` FOREIGN KEY (`user_name`) REFERENCES `passenger` (`user_name`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

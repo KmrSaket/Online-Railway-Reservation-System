@@ -1,9 +1,9 @@
 $('document').ready(function() {
 
   // fetch tickets
-  $.post( './includes/customer/fetch_upcoming_tickets.php',
+  $.post( './includes/customer/fetch_all_tickets.php',
   function(responsedata_fetch) {
-        $('#upcoming').html(responsedata_fetch);
+        $('#All').html(responsedata_fetch);
         // console.log(responsedata_fetch);
         // var response  = $(".doj").text();
         // var temp = response.split(":");

@@ -68,8 +68,14 @@ color: #000;
 width: 90%;
 border-radius: 100%;
 }
+.UnderConstruction-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 #about-us{
-padding: 4% 43%;
+padding: 4% 23%;
 }
 h2{
 text-align: center;

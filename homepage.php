@@ -88,9 +88,9 @@
       <div class="col-lg-6">
         <form class="reservation-form" action="trains.php" method="get">
           <h3>Search</h3>
-          <input class="form-control mr-sm-2" type="text" placeholder="FROM" name="s">
+          <input class="form-control mr-sm-2" type="text" placeholder="FROM (Autosearch Unavailable)" name="s">
           <br>
-          <input class="form-control mr-sm-2" type="text" placeholder="TO" name="d">
+          <input class="form-control mr-sm-2" type="text" placeholder="TO (Autosearch Unavailable)" name="d">
           <br>
           <label for="doj">Select Date :  </label>
           <input type="date" name="date">
@@ -108,6 +108,7 @@
   <section id = "check-pnr">
     <form>
       <h1>Checking your PNR was never that easy!</h1>
+			<p class="text-warning">Sorry for inconvenience. This section is Under Construction!</p>
       <input class="form-control " type="search" placeholder="Enter your PNR number" id="pnr">
       <button class="btn btn-dark btn-md" type="submit">Check PNR</button>
     </form>
@@ -131,10 +132,11 @@
   <section id = "about-us">
     <h2>ABOUT US</h2>
     <ul>
-      <li>lorem ipsum</li>
-      <li>ugkbslxxz</li>
-      <li>bohxc ohcild</li>
-      <li>yj csukdxzo</li>
+      <li>Rishav Raj 			- 18700116050</li>
+      <li>Shradha Praveen - 18700116036</li>
+      <li>Saket Kumar 		- 18700116047</li>
+      <li>Sujata Kumari 	- 18700116015</li>
+			<li>Shalini Kumari 	- 18700116039</li>
     </ul>
   </section>
   <footer id="footer">
@@ -161,21 +163,22 @@
 		      	</div>
 						<br>
 						<ul class="nav nav-tabs" id="myTab" role="tablist">
-						  <li class="nav-item">
-						    <a class="nav-link active" id="upcomingTicket" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="true">Upcoming</a>
+							<li class="nav-item">
+						    <a class="nav-link active" id="allTickets" data-toggle="tab" href="#All" role="tab" aria-controls="all" aria-selected="true">All</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" id="pastTicket" data-toggle="tab" href="#past" role="tab" aria-controls="profile" aria-selected="false">Past</a>
+						    <a class="nav-link" id="upcomingTicket" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="false">Upcoming</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" id="allTickets" data-toggle="tab" href="#All" role="tab" aria-controls="contact" aria-selected="false">All</a>
+						    <a class="nav-link" id="pastTicket" data-toggle="tab" href="#past" role="tab" aria-controls="past" aria-selected="false">Past</a>
 						  </li>
 						</ul>
 						<div class="tab-content" id="myTabContent">
 							<br><br>
-						  <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcomingTicket">Upcoming Tickets</div>
-						  <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="profile-tab">Past Tickets!</div>
-						  <div class="tab-pane fade" id="All" role="tabpanel" aria-labelledby="contact-tab">All Ticket!</div>
+							<p class="bg-danger">Sorry, Cancelling Tickets NOT Available at the moment!</p>
+							<div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="contact-tab"></div>
+						  <div class="tab-pane fade" id="upcoming" role="tabpanel" aria-labelledby="upcomingTicket">Upcoming Tickets <br> <strong class="text-info">Under Construction</strong></div>
+						  <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="profile-tab">Past Tickets! <br> <strong class="text-info">Under Construction</strong></div>
 						</div>
 					</div>
 				</div>

@@ -36,7 +36,9 @@ if(!isset($_SESSION['userName'])){
 													<li class="list-group-item"> PNR:  <?php echo $result['pnr']; ?> </li>
                           <li class="list-group-item"> Source:  <?php echo $result['source_st']; ?> </li>
                           <li class="list-group-item"> Destination:  <?php echo $result['destination_st']; ?> </li>
-                          <li class="doj list-group-item">:<?php echo $result['dateOfBooking']; ?></li>
+                          <li class="doj list-group-item">Date of Journey:<?php echo $result['dateOfBooking']; ?></li>
+                          <li class="list-group-item"> Passenger Name:  <?php echo $result['p1_name']; ?> <br> Age:  <?php echo $result['p1_age']; ?> | Gender:  <?php echo $result['p1_gender']; ?>  </li>
+                          <li class="list-group-item"> Passenger Name:  <?php echo $result['p2_name']; ?> <br> Age:  <?php echo $result['p2_age']; ?> | Gender:  <?php echo $result['p2_gender']; ?>  </li>
                         </ul>
                       </div>
                   </div>

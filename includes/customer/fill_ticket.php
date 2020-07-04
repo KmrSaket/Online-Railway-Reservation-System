@@ -38,9 +38,9 @@
       </tr>
       <tr>
         <td> 1. </td>
-        <td> <input class = "name" type="text" name="name1" value=""> </td>
-        <td> <input class="age" type="text" name="age1" value=""> </td>
-        <td> <select class="" name="gender1">
+        <td> <input class = "name" type="text" name="name1" value="" required> </td>
+        <td> <input class="age" type="text" name="age1" value="" required> </td>
+        <td> <select class="" name="gender1" >
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
@@ -49,34 +49,15 @@
 
       <tr>
         <td> 2. </td>
-        <td> <input class="name" type="text" name="" value=""> </td>
-        <td> <input class="age" type="text" name="" value=""> </td>
-        <td> <select class="" name="">
+        <td> <input class="name" type="text" name="name2" value="" required> </td>
+        <td> <input class="age" type="text" name="age2" value="" required> </td>
+        <td> <select class="" name="gender2" >
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
         </td>
       </tr>
-      <tr>
-        <td> 3. </td>
-        <td> <input class="name" type="text" name="" value=""> </td>
-        <td> <input class="age" type="text" name="" value=""> </td>
-        <td> <select class="" name="">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td> 4. </td>
-        <td> <input class="name" type="text" name="" value=""> </td>
-        <td> <input class="age" type="text" name="" value=""> </td>
-        <td> <select class="" name="">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </td>
-      </tr>
+
     </table>
 
     <input type="checkbox" id="t&c" name="" value="">

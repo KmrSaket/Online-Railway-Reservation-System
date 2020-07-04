@@ -26,9 +26,12 @@ if(!isset($user_name)){
       $name1=$_POST['name1'];
       $age1=$_POST['age1'];
       $gender1=$_POST['gender1'];
-      echo $name1;
+      $name2=$_POST['name2'];
+      $age2=$_POST['age2'];
+      $gender2=$_POST['gender2'];
 
-  		$sql = "INSERT INTO `ticket`(`user_name`,  `source_st`, `destination_st`, `dateOfBooking`) VALUES (?,?,?,?)";
+      $sql = "INSERT INTO `ticket`(`user_name`,  `source_st`, `destination_st`, `dateOfBooking`, `p1_name`, `p1_age`, `p1_gender` , `p2_name`, `p2_age`, `p2_gender`) VALUES (?,?,?,?,?,?,?,?,?,?)";
+
       // `ticket_no`, `pnr`, `transaction_id`, `class`, `seat_no`, `fare`
   		$stmt=mysqli_stmt_init($conn);
 
@@ -38,9 +41,15 @@ if(!isset($user_name)){
   				exit();
   			}
   			else{
-          // echo "successfull";
-          mysqli_stmt_bind_param($stmt,"ssss",$user_name,$source,$destination,$date);
-          mysqli_stmt_execute($stmt);
+
+          if (true) {  //condition to check the format of all entry, according to their data type and property.
+            mysqli_stmt_bind_param($stmt,"sssssissis",$user_name,$source,$destination,$date,$name1,$age1,$gender1,$name2,$age2,$gender2);
+            mysqli_stmt_execute($stmt);
+          }
+          else {
+            echo "error";
+          }
+
   		  }
 
   ?>
