@@ -88,9 +88,17 @@
       <div class="col-lg-6">
         <form class="reservation-form" action="trains.php" method="get">
           <h3>Search</h3>
-          <input class="form-control mr-sm-2" type="text" placeholder="FROM (Autosearch Unavailable)" name="s">
+          <!-- <input class="form-control mr-sm-2" type="text" placeholder="FROM (Autosearch Unavailable)" name="s"> -->
+					<select class="form-control mr-sm-2" name="s" id="source_st">
+
+
+					</select>
           <br>
-          <input class="form-control mr-sm-2" type="text" placeholder="TO (Autosearch Unavailable)" name="d">
+          <!-- <input class="form-control mr-sm-2" type="text" placeholder="TO (Autosearch Unavailable)" name="d"> -->
+					<select class="form-control mr-sm-2" name="d" id="destination_st">
+
+
+					</select>
           <br>
           <label for="doj">Select Date :  </label>
           <input type="date" name="date">
@@ -108,9 +116,8 @@
   <section id = "check-pnr">
     <form>
       <h1>Checking your PNR was never that easy!</h1>
-			<p class="text-warning">Sorry for inconvenience. This section is Under Construction!</p>
-      <input class="form-control " type="search" placeholder="Enter your PNR number" id="pnr">
-      <button class="btn btn-dark btn-md" type="submit">Check PNR</button>
+      <input class="form-control " type="search" placeholder="Enter your PNR number (10 digits)" id="pnr">
+      <button class="btn btn-dark btn-md" type="submit" id="checkpnr">Check PNR</button>
     </form>
   </section>
 
@@ -118,7 +125,7 @@
 
 
 <section id="contact-us">
-<form class="contact-form" action="mailto:orrs@fyp.com" method="post" enctype="text/plain">
+<form class="contact-form" action="mailto:orrs.fyp@gmail.com" method="post" enctype="text/plain">
   <h2>CONTACT US</h2>
   <input class="form-control" type="name" name="name" placeholder="YOUR NAME">
   <input class="form-control" type="email" name="email" placeholder="YOUR EMAIL ID">
@@ -143,7 +150,6 @@
     <i class="f fab fa-twitter"></i>
     <i class="f fab fa-facebook"></i>
     <i class="f fab fa-instagram"></i>
-    <i class="f fab fa-envelope"></i>
     <p>© Copyright 2020  ORRS</p>
   </footer>
 
@@ -160,30 +166,13 @@
 					<div class="modal-content  text-center" style="padding:5vh 2vh">
 						<div class="modal-header">
 											<h5 class="modal-title">Transactions</h5>
-		      	</div>
-						<br>
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
-							<li class="nav-item">
-						    <a class="nav-link active" id="allTickets" data-toggle="tab" href="#All" role="tab" aria-controls="all" aria-selected="true">All</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" id="upcomingTicket" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="false">Upcoming</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" id="pastTicket" data-toggle="tab" href="#past" role="tab" aria-controls="past" aria-selected="false">Past</a>
-						  </li>
-						</ul>
-						<div class="tab-content" id="myTabContent">
-							<br><br>
-							<p class="bg-danger">Sorry, Cancelling Tickets NOT Available at the moment!</p>
-							<div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="contact-tab"></div>
-						  <div class="tab-pane fade" id="upcoming" role="tabpanel" aria-labelledby="upcomingTicket">Upcoming Tickets <br> <strong class="text-info">Under Construction</strong></div>
-						  <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="profile-tab">Past Tickets! <br> <strong class="text-info">Under Construction</strong></div>
 						</div>
+						<br>
+							<!-- <p class="bg-danger">Sorry, Cancelling Tickets NOT Available at the moment!</p> -->
+							<div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="contact-tab"></div>
 					</div>
 				</div>
 			</div>
-
 
 
 
@@ -209,7 +198,7 @@
 		      	</div>
 						<br>
 						<div class="container">
-							booked ticket! ...etc...
+							You Booked a Ticket Successfully!
 						</div>
 					</div>
 				</div>
@@ -225,6 +214,18 @@
 
 
 
+
+<!-- modal for checking pnr (modal starts) -->
+
+<div id="pnrmodal" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >
+		<div class="modal-content  text-center" id="ticket-pnr" style="padding:5vh 2vh">
+
+		</div>
+	</div>
+</div>
+
+<!-- modal for checking pnr (modal ends) -->
 
 
 

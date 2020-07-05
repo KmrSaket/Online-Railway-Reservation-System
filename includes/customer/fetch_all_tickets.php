@@ -22,26 +22,29 @@ if(!isset($_SESSION['userName'])){
 				$query=mysqli_stmt_get_result($stmt);
 
         if(mysqli_num_rows($query)>0){
-
+          $i=1;
   				while ($result=mysqli_fetch_array($query)) {
             ?>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" style="padding:5px 2px">
               <div class="col-8">
                   <div class="card">
 
                       <!-- <h5 class="card-header card-title"> <?php echo $result['train_no']." - ".$result['train_name']; ?></h5> -->
-                      <div class="card-body">
+                      <div class="card-body" style="padding:5px 2px">
                         <ul class="list-group list-group-flush">
-													<li class="list-group-item"> PNR:  <?php echo $result['pnr']; ?> </li>
-                          <li class="list-group-item"> Source:  <?php echo $result['source_st']; ?> </li>
-                          <li class="list-group-item"> Destination:  <?php echo $result['destination_st']; ?> </li>
-                          <li class="doj list-group-item">Date of Journey:<?php echo $result['dateOfBooking']; ?></li>
-                          <li class="list-group-item"> Passenger Name:  <?php echo $result['p1_name']; ?> <br> Age:  <?php echo $result['p1_age']; ?> | Gender:  <?php echo $result['p1_gender']; ?>  </li>
-                          <li class="list-group-item"> Passenger Name:  <?php echo $result['p2_name']; ?> <br> Age:  <?php echo $result['p2_age']; ?> | Gender:  <?php echo $result['p2_gender']; ?>  </li>
+                          <li class="list-group-item" style="padding:5px 2px"> Ticket Number:  <?php echo $i; $i++; ?> </li>
+													<li class="list-group-item" style="padding:5px 2px"> PNR:  <?php echo $result['pnr']; ?> </li>
+                          <li class="list-group-item" style="padding:5px 2px"> Source:  <?php echo $result['source_st']; ?> </li>
+                          <li class="list-group-item" style="padding:5px 2px"> Destination:  <?php echo $result['destination_st']; ?> </li>
+                          <li class="doj list-group-item" style="padding:5px 2px">Date of Journey:<?php echo $result['dateOfBooking']; ?></li>
+                          <li class="list-group-item" style="padding:5px 2px"> Passenger Name:  <?php echo $result['p1_name']; ?> <br> Age:  <?php echo $result['p1_age']; ?> | Gender:  <?php echo $result['p1_gender']; ?>  </li>
+                          <li class="list-group-item" style="padding:5px 2px"> Passenger Name:  <?php echo $result['p2_name']; ?> <br> Age:  <?php echo $result['p2_age']; ?> | Gender:  <?php echo $result['p2_gender']; ?>  </li>
+                          <!-- <li class="list-group-item"> <button type="button" name="canelTicket">CANCEL</button> </li> -->
                         </ul>
                       </div>
                   </div>
+                  ..................................
                 </div>
             </div>
             <br> <br>

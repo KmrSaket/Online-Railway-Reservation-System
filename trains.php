@@ -171,7 +171,7 @@
   </section>
 <hr> -->
 <section id="contact-us">
-<form class="contact-form" action="mailto:orrs@fyp.com" method="post" enctype="text/plain">
+<form class="contact-form" action="mailto:orrs.fyp@gmail.com" method="post" enctype="text/plain">
   <h2>CONTACT US</h2>
   <input class="form-control" type="name" name="name" placeholder="YOUR NAME">
   <input class="form-control" type="email" name="email" placeholder="YOUR EMAIL ID">
@@ -183,17 +183,17 @@
   <section id = "about-us">
     <h2>ABOUT US</h2>
     <ul>
-      <li>lorem ipsum</li>
-      <li>ugkbslxxz</li>
-      <li>bohxc ohcild</li>
-      <li>yj csukdxzo</li>
+			<li>Rishav Raj 			- 18700116050</li>
+      <li>Shradha Praveen - 18700116036</li>
+      <li>Saket Kumar 		- 18700116047</li>
+      <li>Sujata Kumari 	- 18700116015</li>
+			<li>Shalini Kumari 	- 18700116039</li>
     </ul>
   </section>
   <footer id="footer">
     <i class="f fab fa-twitter"></i>
     <i class="f fab fa-facebook"></i>
     <i class="f fab fa-instagram"></i>
-    <i class="f fab fa-envelope"></i>
     <p>© Copyright 2020  ORRS</p>
   </footer>
 
@@ -201,43 +201,27 @@
 
 
 
-<!-- modal for users transactions (modal start) -->
+	<!-- modal for users transactions (modal start) -->
 
 
 
-
-
-<div id="transactions" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >
-					<div class="modal-content  text-center" style="padding:5vh 2vh">
-						<div class="modal-header">
-											<h5 class="modal-title">Transactions</h5>
-		      	</div>
-						<br>
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
-						  <li class="nav-item">
-						    <a class="nav-link active" id="upcomingTicket" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="true">Upcoming</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" id="pastTicket" data-toggle="tab" href="#past" role="tab" aria-controls="profile" aria-selected="false">Past</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" id="allTickets" data-toggle="tab" href="#All" role="tab" aria-controls="contact" aria-selected="false">All</a>
-						  </li>
-						</ul>
-						<div class="tab-content" id="myTabContent">
-							<br><br>
-						  <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcomingTicket">Upcoming Tickets</div>
-						  <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="profile-tab">Past Tickets!</div>
-						  <div class="tab-pane fade" id="All" role="tabpanel" aria-labelledby="contact-tab">All Ticket!</div>
+	<div id="transactions" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >
+						<div class="modal-content  text-center" style="padding:5vh 2vh">
+							<div class="modal-header">
+												<h5 class="modal-title">Transactions</h5>
+			      	</div>
+							<br>
+								<!-- <p class="bg-danger">Sorry, Cancelling Tickets NOT Available at the moment!</p> -->
+								<div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="contact-tab"></div>
 						</div>
 					</div>
 				</div>
-			</div>
 
 
 
-<!-- modal for users transactions (modal end) -->
+
+	<!-- modal for users transactions (modal end) -->
 
 
 
@@ -262,4 +246,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/homepage.js"></script>
 <script type="text/javascript" src="js/trains.js"></script>
+<script type="text/javascript" src="js/fetchTicket.js"></script>
 </html>
