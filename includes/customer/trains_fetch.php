@@ -39,10 +39,9 @@
                       <h5 class="card-header card-title"> <?php echo $result['train_no']." - ".$result['train_name']; ?></h5>
                       <div class="card-body">
                         <ul class="list-group list-group-flush">
-													<li class="list-group-item"> Cost:  <?php echo "NA"; ?> </li>
-                          <li class="list-group-item"> Availability:  <?php echo "NA"; ?> </li>
-                          <li class="list-group-item"> Duration:  <?php echo "NA"; ?> </li>
-                          <li class="list-group-item"> Time:   <?php echo "NA"; ?> </li>
+													<li class="list-group-item"> Distance:  <?php echo $result['distance']; ?> </li>
+													<li class="list-group-item"> Fare:  <?php echo $result['fare']; ?> </li>
+                          <li class="list-group-item"> Availability:  <?php echo "YES"; ?> </li>
                           <li class="list-group-item">  <button class="btn btn-dark" name="book" type="button">Book Ticket</button></li>
                         </ul>
                       </div>

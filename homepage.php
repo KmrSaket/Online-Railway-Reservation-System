@@ -168,7 +168,6 @@
 											<h5 class="modal-title">Transactions</h5>
 						</div>
 						<br>
-							<!-- <p class="bg-danger">Sorry, Cancelling Tickets NOT Available at the moment!</p> -->
 							<div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="contact-tab"></div>
 					</div>
 				</div>

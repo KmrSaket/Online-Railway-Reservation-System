@@ -42,7 +42,7 @@ if(!isset($_SESSION['userName'])){
                           <?php endif; ?>
 
 
-                          <li class="list-group-item"> <button type="button" name="canelTicket">CANCEL</button> </li>
+                          <li class="list-group-item"> <button class="btn btn-dark" type="button" name="canelTicket">CANCEL</button> </li>
                         </ul>
                       </div>
                   </div>

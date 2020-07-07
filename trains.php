@@ -210,9 +210,8 @@
 						<div class="modal-content  text-center" style="padding:5vh 2vh">
 							<div class="modal-header">
 												<h5 class="modal-title">Transactions</h5>
-			      	</div>
+							</div>
 							<br>
-								<!-- <p class="bg-danger">Sorry, Cancelling Tickets NOT Available at the moment!</p> -->
 								<div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="contact-tab"></div>
 						</div>
 					</div>
@@ -224,7 +223,17 @@
 	<!-- modal for users transactions (modal end) -->
 
 
+	<!-- modal for checking pnr and cancelled ticket info (modal starts) -->
 
+	<div id="pnrmodal" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >
+			<div class="modal-content  text-center" id="ticket-pnr" style="padding:5vh 2vh">
+
+			</div>
+		</div>
+	</div>
+
+	<!-- modal for checking pnr (modal ends) -->
 
 
 
