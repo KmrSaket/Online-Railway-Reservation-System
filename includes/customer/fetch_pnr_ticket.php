@@ -29,12 +29,10 @@ if(!isset($_SESSION['userName'])){
           $result=mysqli_fetch_array($query);
           ?>
 
-          <div class="row justify-content-center">
+          <div class="row justify-content-center" style="padding:5px 2px">
             <div class="col-8">
                 <div class="card">
-
-                    <!-- <h5 class="card-header card-title"> <?php echo $result['train_no']." - ".$result['train_name']; ?></h5> -->
-                    <div class="card-body">
+                    <div class="card-body" style="padding:5px 2px">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item"> PNR:  <?php echo $result['pnr']; ?> </li>
                         <li class="list-group-item"> Source:  <?php echo $result['source_st']; ?> </li>

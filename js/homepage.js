@@ -9,6 +9,7 @@ $('document').ready(function() {
   if(errormsg=="successfull"){
     // document.getElementById("errormsg").innerHTML="Ticket Booked!";
     $("#payment").modal();
+    window.history.replaceState({}, document.title, "?" + "");
   }
 
 
@@ -43,10 +44,35 @@ $('#checkpnr').click(function(){
   function(data,status) {
         // alert(data + status);
         $('#ticket-pnr').html(data);
-        $("#pnrmodal").modal();
+        $('#pnrmodal').modal();
+
       }
     );
+
 });
+
+
+
+$("#transactions").on('click','button',function(){
+         // get the current row
+         var currentRow=$(this).closest("ul");
+         var cancelpnr = currentRow.find("li:eq(1)").text().trim().substring(6);
+         var choice = confirm("Do you want to cancel ticket?");
+         if (choice == true) {
+           $.post( './includes/customer/cancel_pnr_ticket.php',
+           {pnr: cancelpnr},
+           function(data,status) {
+                 $('#transactions').toggle();
+                 // alert(data + status);
+                 $('#ticket-pnr').text(data);
+                 $('#pnrmodal').modal();
+                 $('#pnrmodal').on('hidden.bs.modal', function () {
+                location.reload();
+              });
+               }
+             );
+         }
+       });
 
 
 

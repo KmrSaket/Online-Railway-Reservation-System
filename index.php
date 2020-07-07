@@ -14,8 +14,12 @@
 <head>
   <meta charset="utf-8">
   <title>Login Page</title>
-  <link rel="stylesheet" href="style\style_loginSignup.css">
-	<link rel="stylesheet" href="style\bootstrap.css">
+  	<link rel="stylesheet" href="style/bootstrap.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- external css -->
+	<link rel="stylesheet" href="style/style_loginSignup.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 </head>
 
@@ -44,12 +48,7 @@
       <button type="submit" name="signup_btn" style ="background-color: #f44336;">Signup</button>
     </div>
 
-    <div class="container1">
-      <label style="text-align:">
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-      <span class="psw"><a href="#">Forgot password?</a></span>
-    </div>
+    
   </form>
 
 

@@ -89,7 +89,7 @@
         <form class="reservation-form" action="trains.php" method="get">
           <h3>Search</h3>
           <!-- <input class="form-control mr-sm-2" type="text" placeholder="FROM (Autosearch Unavailable)" name="s"> -->
-					<select class="form-control mr-sm-2" name="s" id="source_st">
+					<select class="form-control mr-sm-2" name="s" id="source_st" >
 
 
 					</select>
@@ -101,7 +101,7 @@
 					</select>
           <br>
           <label for="doj">Select Date :  </label>
-          <input type="date" name="date">
+          <input type="date" name="date" required>
 
           <button class = "btn-train btn btn-primary btn-lg btn-block" type="submit" id="search" >Search</button>
         </form>
@@ -117,7 +117,7 @@
     <form>
       <h1>Checking your PNR was never that easy!</h1>
       <input class="form-control " type="search" placeholder="Enter your PNR number (10 digits)" id="pnr">
-      <button class="btn btn-dark btn-md" type="submit" id="checkpnr">Check PNR</button>
+      <button class="btn btn-dark btn-md" type="button" id="checkpnr">Check PNR</button>
     </form>
   </section>
 
@@ -185,7 +185,6 @@
 
 
 
-
 <!-- modal after ticket is booked (modal start) -->
 
 
@@ -215,7 +214,7 @@
 
 
 
-<!-- modal for checking pnr (modal starts) -->
+<!-- modal for checking pnr and cancelled ticket info (modal starts) -->
 
 <div id="pnrmodal" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-md modal-dialog-centered" role="document"  >

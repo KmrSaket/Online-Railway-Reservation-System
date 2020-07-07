@@ -1,5 +1,5 @@
 <!-- default station  -->
-<option disabled selected>FROM</option>
+<option value="" disabled selected>FROM</option>
 
 <?php
 session_start();

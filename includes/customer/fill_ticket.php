@@ -49,8 +49,8 @@
 
       <tr>
         <td> 2. </td>
-        <td> <input class="name" type="text" name="name2" value="" required> </td>
-        <td> <input class="age" type="text" name="age2" value="" required> </td>
+        <td> <input class="name" type="text" name="name2" > </td>
+        <td> <input class="age" type="text" name="age2" > </td>
         <td> <select class="" name="gender2" >
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -60,7 +60,7 @@
 
     </table>
 
-    <input type="checkbox" id="t&c" name="" value="">
+    <input type="checkbox" id="t&c" name="" value="" required>
     <label for="t&c">Agree to our <a href="./Tnc" target="_blank">terms and conditions</a></label>
     <br>
     <button class="btn-style btn btn-lg btn-primary" type="submit" name="confirm">Proceed to Payment.</button>

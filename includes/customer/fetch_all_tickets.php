@@ -29,8 +29,6 @@ if(!isset($_SESSION['userName'])){
             <div class="row justify-content-center" style="padding:5px 2px">
               <div class="col-8">
                   <div class="card">
-
-                      <!-- <h5 class="card-header card-title"> <?php echo $result['train_no']." - ".$result['train_name']; ?></h5> -->
                       <div class="card-body" style="padding:5px 2px">
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item" style="padding:5px 2px"> Ticket Number:  <?php echo $i; $i++; ?> </li>
@@ -39,8 +37,12 @@ if(!isset($_SESSION['userName'])){
                           <li class="list-group-item" style="padding:5px 2px"> Destination:  <?php echo $result['destination_st']; ?> </li>
                           <li class="doj list-group-item" style="padding:5px 2px">Date of Journey:<?php echo $result['dateOfBooking']; ?></li>
                           <li class="list-group-item" style="padding:5px 2px"> Passenger Name:  <?php echo $result['p1_name']; ?> <br> Age:  <?php echo $result['p1_age']; ?> | Gender:  <?php echo $result['p1_gender']; ?>  </li>
-                          <li class="list-group-item" style="padding:5px 2px"> Passenger Name:  <?php echo $result['p2_name']; ?> <br> Age:  <?php echo $result['p2_age']; ?> | Gender:  <?php echo $result['p2_gender']; ?>  </li>
-                          <!-- <li class="list-group-item"> <button type="button" name="canelTicket">CANCEL</button> </li> -->
+                          <?php if ($result['p2_name'] != ""): ?>
+                            <li class="list-group-item" style="padding:5px 2px"> Passenger Name:  <?php echo $result['p2_name']; ?> <br> Age:  <?php echo $result['p2_age']; ?> | Gender:  <?php echo $result['p2_gender']; ?>  </li>
+                          <?php endif; ?>
+
+
+                          <li class="list-group-item"> <button type="button" name="canelTicket">CANCEL</button> </li>
                         </ul>
                       </div>
                   </div>
