@@ -15,7 +15,6 @@ $('document').ready(function() {
       $.post( 'includes/customer/trains_fetch.php' ,
             { source: source, destination: destination, dayIndex : dayIndex },
             function(responsedata_fetch) {
-                // alert(this.url);
                $('#response').html(responsedata_fetch);
                $('#searchQuery').html("Trains between " +  source + " and " +  destination);
                $('button[name="book"]').click(function() {
@@ -28,41 +27,13 @@ $('document').ready(function() {
                        $.post( 'includes/customer/fill_ticket.php' ,
                              { source: source, destination: destination, date : date, train_no : tnum, train_name : tname },
                              function(responsedata_fetch) {
-                                 // alert(this.url);
                                  $('#searchQuery').html("Please fill the form!");
                                  $('#response').html(responsedata_fetch);
-
-                                // $('button[name="book"]').click(function() {
-                                //   var currentCard=$(this).closest("span");
-                                //   var tnum=currentCard.find("h5").text().trim().substring(0,5);
-                                //   var tname=currentCard.find("h5").text().trim().substring(8,);
-                                //   console.log(tnum);
-                                //   console.log(tname);
-                                // });
                                }
                          );
 
                });
               }
         );
-
-
-
-
-
-
-
-
-        // code to read selected table row cell data (values).
-        // $('.book').click(function(){
-         // get the current card
-         // var currentRow=$(this).closest("span");
-         //get values of card
-         // var tno=currentRow.find("h5").text().trim();
-         // console.log("ll");
-         // console.log(tno);
-       // });
-
-       // console.log(date);
 
 });

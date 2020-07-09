@@ -5,11 +5,6 @@ if(!isset($user_name)){
   header("Location: index.php?loginrequired");
   exit();
 }
-// elseif (!isset($_POST['confirm'])) {
-//   header("Location: homepage.php?book_a_train_first");
-//   exit();
-// }
-  // $totalPrice=$_POST['totalPrice'];
 
 
   include_once ('./includes/dbh_inc.php') ;		//includes database connection file
@@ -32,7 +27,7 @@ if(!isset($user_name)){
 
       $sql = "INSERT INTO `ticket`(`user_name`,  `source_st`, `destination_st`, `dateOfBooking`, `p1_name`, `p1_age`, `p1_gender` , `p2_name`, `p2_age`, `p2_gender`) VALUES (?,?,?,?,?,?,?,?,?,?)";
 
-      // `ticket_no`, `pnr`, `transaction_id`, `class`, `seat_no`, `fare`
+
   		$stmt=mysqli_stmt_init($conn);
 
   			//check if sql connection is created
@@ -55,16 +50,6 @@ if(!isset($user_name)){
   ?>
 
 
-<!-- <div style="margin:100px">
-  dummy images and texts goes here!
-  <br>
-  <br>
-  <strong>nothing else to be included!</strong>
-  <br>
-  <br>
-  <a href="homepage.php?payment=successfull"><button type="button" name="button"> make payment</button></a>
-  <input type="text" name="" value="<?php echo $age1; ?>" disabled>
-</div> -->
 <!DOCTYPE html>
 <html>
 	<head>

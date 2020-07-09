@@ -63,28 +63,3 @@
 		}
 
 ?>
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="row justify-content-center">
-  <div class="col-8">
-      <div class="card">
-        <h5 class="card-header card-title">Train Name</h5>
-        <div class="card-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"> Availability </li>
-            <li class="list-group-item"> Duration:</li>
-            <li class="list-group-item"> Time: </li>
-            <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-</div> -->

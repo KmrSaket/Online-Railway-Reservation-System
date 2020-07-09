@@ -56,9 +56,6 @@
         <li class="nav-item">
           <a class="nav-link" id="transactions_link">TRANSACTIONS</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">CHECK PNR</a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="Tnc.php">T&C</a>
         </li>
@@ -92,84 +89,9 @@
 <br>
 
 <div class="container" id="response">
-  <!-- <div class="row justify-content-center">
-    <div class="col-8">
-        <div class="card">
-          <h5 class="card-header card-title">Train Name</h5>
-          <div class="card-body">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"> Availability </li>
-              <li class="list-group-item"> Duration:</li>
-              <li class="list-group-item"> Time: </li>
-              <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-8">
-        <div class="card">
-          <h5 class="card-header card-title">Train Name</h5>
-          <div class="card-body">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"> Availability </li>
-              <li class="list-group-item"> Duration:</li>
-              <li class="list-group-item"> Time: </li>
-              <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-8">
-        <div class="card">
-          <h5 class="card-header card-title">Train Name</h5>
-          <div class="card-body">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"> Availability </li>
-              <li class="list-group-item"> Duration:</li>
-              <li class="list-group-item"> Time: </li>
-              <li class="list-group-item">  <a href="#" class="btn btn-dark">Book Ticket</a> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  </div> -->
+
 </div>
 
-
-
-  <!-- <section id="train-search">
-    <div class="row">
-      <div class="col-lg-6">
-        <form class="reservation-form" action="trains.php">
-          <h3>Search</h3>
-          <input class="form-control mr-sm-2" type="search" placeholder="FROM">
-          <br>
-          <input class="form-control mr-sm-2" type="search" placeholder="TO">
-          <br>
-          <label for="doj">Select Date :  </label>
-          <input type="date" name="date" placeholder="Select Date">
-          <button class = "btn-train btn btn-primary btn-lg btn-block" type="submit" id="search" >Search</button>
-        </form>
-      </div>
-      <div class="col-lg-6">
-        <img class="title-img" src="res/rail.jpg" alt="rail_image">
-      </div>
-    </div>
-
-  </section> -->
-
-  <!-- <section id = "check-pnr">
-    <form>
-      <h1>Checking your PNR was never that easy!</h1>
-      <input class="form-control " type="search" placeholder="Enter your PNR number" id="pnr">
-      <button class="btn btn-dark btn-md" type="submit">Check PNR</button>
-    </form>
-  </section>
-<hr> -->
 <section id="contact-us">
 <form class="contact-form" action="mailto:orrs.fyp@gmail.com" method="post" enctype="text/plain">
   <h2>CONTACT US</h2>
@@ -241,16 +163,9 @@
 
 
 </body>
-<!-- <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/homepage.js"></script>
-<script type="text/javascript" src="js/trains.js"></script> -->
+
 <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/homepage.js"></script>

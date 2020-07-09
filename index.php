@@ -3,7 +3,6 @@
 	if(isset($_SESSION['userName'])){
 		session_unset();
 		session_destroy();
-		//header("Location: ../index.php?user=logged_out");
 	}
 ?>
 
@@ -20,7 +19,6 @@
 	<!-- external css -->
 	<link rel="stylesheet" href="style/style_loginSignup.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu&display=swap" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 </head>
 
 
@@ -48,7 +46,7 @@
       <button type="submit" name="signup_btn" style ="background-color: #f44336;">Signup</button>
     </div>
 
-    
+
   </form>
 
 

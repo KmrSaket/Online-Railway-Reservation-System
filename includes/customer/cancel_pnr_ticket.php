@@ -21,7 +21,6 @@ if(!isset($_SESSION['userName'])){
         mysqli_stmt_bind_param($stmt,"i",$pnr);
         if (mysqli_stmt_execute($stmt)) {
           echo "Ticket Cancelled!";
-          // echo gettype($pnr);
         }
 
 		}

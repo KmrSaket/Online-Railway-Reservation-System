@@ -7,7 +7,6 @@ $('document').ready(function() {
   const urlParams= new URLSearchParams(queryString);
   const errormsg=urlParams.get('payment');
   if(errormsg=="successfull"){
-    // document.getElementById("errormsg").innerHTML="Ticket Booked!";
     $("#payment").modal();
     window.history.replaceState({}, document.title, "?" + "");
   }
@@ -42,7 +41,6 @@ $('#checkpnr').click(function(){
   $.post( './includes/customer/fetch_pnr_ticket.php',
   {pnr: $('#pnr').val()},
   function(data,status) {
-        // alert(data + status);
         $('#ticket-pnr').html(data);
         $('#pnrmodal').modal();
 
@@ -63,7 +61,6 @@ $("#transactions").on('click','button',function(){
            {pnr: cancelpnr},
            function(data,status) {
                  $('#transactions').toggle();
-                 // alert(data + status);
                  $('#ticket-pnr').text(data);
                  $('#pnrmodal').modal();
                  $('#pnrmodal').on('hidden.bs.modal', function () {

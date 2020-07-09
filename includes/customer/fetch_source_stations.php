@@ -35,7 +35,7 @@ if(!isset($_SESSION['userName'])){
 				else {
 					?>
 
-							<h5> No Tickets!</h5>
+						<?php echo "No stations in DB" ?>
 
 					<?php
 				}
