@@ -11,7 +11,7 @@ if(!isset($_SESSION['userName'])){
 		include_once ('../dbh_inc.php') ;		//includes database connection file
 
 
-		$sql = "SELECT DISTINCT `destination_st` FROM `train` ";
+		$sql = "SELECT DISTINCT `destination_st` FROM `train` ORDER BY `destination_st` ASC;";
 		$stmt=mysqli_stmt_init($conn);
 
 			//check if sql connection is created

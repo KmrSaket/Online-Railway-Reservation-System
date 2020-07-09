@@ -45,9 +45,9 @@
 				echo '<script>alert("Sign up successfull!");</script>';
 				}
 			}
-			
+
 		?>
-        
+
 		<label for="uname" style = "padding-right: 0px;"><b>USER NAME</b></label>
         <?php
 			if(isset($_GET['uname'])){
@@ -57,7 +57,7 @@
 			else{
 				echo '<input type="text" placeholder="Enter User Name" name="uname"  style="margin-left: 26px;">';
 			}
-	
+
 		?>
         <br>
 		<label for="fname" style = "padding-right: 0px;"><b>FIRST NAME</b></label>
@@ -69,7 +69,7 @@
 			else{
 				echo '<input type="text" placeholder="Enter First Name" name="fname"  style="margin-left: 26px;">';
 			}
-	
+
 		?>
         <br>
 		<label for="lname" style = "padding-right: 0px;"><b>LAST NAME</b></label>
@@ -81,7 +81,7 @@
 			else{
 				echo '<input type="text" placeholder="Enter Last Name" name="lname"  style="margin-left: 26px;">';
 			}
-	
+
 		?>
         <br>
         <label for="email" style = "padding-right: 35px;"><b>EMAIL</b></label>
@@ -93,7 +93,7 @@
 			else{
 				echo '<input type="text" placeholder="Enter Email" name="email"  style="margin-left: 30px;">';
 			}
-	
+
 		?>
         <br>
         <label for="psw"><b>PASSWORD</b></label>
@@ -108,19 +108,15 @@
 			else{
 				echo '<input type="text" placeholder="Mobile Number (10 digit)" name="phone"  style="margin-left: 26px;">';
 			}
-	
-		?>
-		
-        <br>
-        <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-        </label>
 
+		?>
+
+        <br>
         <div id="form-wrapper" style="max-width:500px;margin:auto;" class="clearfix">
           <button type="submit" class="signupbtn" name="signup_btn">Sign Up</button>
 		  <button type="submit" class="cancelbtn" name="login_btn" style="background-color: #f44336;">Login</button>
         </div>
-		<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+		<p>By creating an account you agree to our <a href="./Tnc" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
       </div>
     </form>
 
